@@ -18,14 +18,20 @@ export default class MoneyGraph extends Component {
   }
 
   addMoney() {
+    // I'll make a copy of the state (easier to modify that wey)
     let newState = this.state;
+    // Find the earnings for quarter 4 and add 1000
     newState.data[3].earnings += 1000;
+    // Set this to be the new state, this will automatically update the graph
     this.setState(newState);
   }
 
   takeMoney() {
+    // I'll make a copy of the state (easier to modify that wey)
     let newState = this.state;
+    // Find the earnings for quarter 4 and decrease 1000
     newState.data[3].earnings -= 1000;
+    // Set this to be the new state, this will automatically update the graph
     this.setState(newState);
   }
 

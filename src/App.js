@@ -6,6 +6,7 @@ import MoneyGraph from "./Components/MoneyGraph";
 class App extends Component {
   render() {
     return (
+      // This is the outline of the whole site
       <div>
         {/* Navbar for the top thats blue and just says Chart Starter */}
         <nav className="navbar navbar-dark bg-primary">
@@ -13,8 +14,11 @@ class App extends Component {
             Chart Starter
           </a>
         </nav>
-        {/* Our MoneyGraph Component from the Components folder */}
-        <MoneyGraph />
+        {/* Use bootstrap to center the graph in a div */}
+        <div class="col-xs-1" align="center">
+          {/* Our MoneyGraph Component from the Components folder */}
+          <MoneyGraph />
+        </div>
       </div>
     );
   }
